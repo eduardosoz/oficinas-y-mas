@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Vistas.MasterPage" %>
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+        <link href="../assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../assets/css/styles.css" rel="stylesheet"/>        
+        <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet"/>  
+        <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
+        <title>Inicio</title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="Contactos.aspx">
+                        <img height="45px" src="../assets/images/miniLogo.png" class="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Nombre de Usuario
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="">Reportar Problema</a></li>
+                                <li><a class="dropdown-item" href="">Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="Contactos.aspx">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Prospectos.aspx">Prospectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Clientes.aspx">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Reportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Usuarios</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <form runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </body>
+</html>
+
